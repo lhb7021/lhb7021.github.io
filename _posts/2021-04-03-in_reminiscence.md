@@ -11,7 +11,7 @@ categories: CodeStates
 *~~아직 개발자가 되기위해 배우는 과정이기 때문에 잘 못 알고있는 부분이 많지만 보완하려 노력해야겠다. 따라서... 잘못 이해하고 적고있을 수도 있다...~~*
 
 ---
-### 1주차
+## 1주차
 1주차에는 js의 기본적인 부분들... 변수선언, 함수, 조건문, 문자열, 반복문에 대해서 배우는 시간을 가졌다. 그리고 HTML과 css의 기초적인 부분도 배웠다.
 
 먼저, 변수라 함은 이름 같은 것인데 var, let, const 등등 이러한 것들로 변수를 새로 선언해줘야한다.
@@ -80,12 +80,12 @@ HTML과 css는 VScode를 설치하여 간단한 기초적인 부분을 습득했
 여러 익스텐션을 깔았는데 아직까지도 숙달이 안됐다.. 디버그도 완벽히 활용을 못하고있다...
 
 
-### 2주차
+## 2주차
 2주차에는 1주차때 배웠던 HTML과 css를 활용하여 calculator를 구현해보는 시간을 가졌다. js의 배열, 객체, 변수의 데이터형, 스코프의 개념에 대해 배웠고, 와이어프레임 설계 방법과 twittler를 하드코딩해보는 시간을 가졌다.
 
 [Calculator](https://github.com/lhb7021/pre-sprint-calculator)구현은 그리 어렵지 않았다. 물론 처음이라 가이드라인이 있었기에 어렵게 느껴지진 않았던 것 같다.  
 모든게 처음이라 엄청 뒤죽박죽이기는 하지만 js와 css를 활용하여 프로그램을 구현한다는게 신기했고 재밌었다.
-![image](https://user-images.githubusercontent.com/79880529/113480351-dbfe9300-94ce-11eb-9710-b33c02518cdf.png){: width="300px", height="450px"}
+![image](https://user-images.githubusercontent.com/79880529/113480351-dbfe9300-94ce-11eb-9710-b33c02518cdf.png){: width="300px", height="450px" }
 
 베열은 문자열을 각각의 공간으로 배정된 저장소라고 생각하면된다.
 ``` js
@@ -146,4 +146,4 @@ let globalVar = 'global';  //전역변수.
 [twittler](https://github.com/lhb7021/pre-sprint-twittler)
 >하드코딩으로 끝나지 않고 버튼을 누르면 스크립트가 실행되게 구현해 보았다.  
 >나는 js는 정말 재밌게 배웠는데, css는 배우는데 힘들었다... 어렵거나 그런것은 아니지만... 창작의 고통같은...? 디자인을 너무 못한다..ㅠ  
-![image](https://user-images.githubusercontent.com/79880529/113483124-d14afa80-94dc-11eb-95d8-e11366aff3ff.png){ width="300", height="450" }
+![image](https://user-images.githubusercontent.com/79880529/113483124-d14afa80-94dc-11eb-95d8-e11366aff3ff.png){: width="300", height="450" }
