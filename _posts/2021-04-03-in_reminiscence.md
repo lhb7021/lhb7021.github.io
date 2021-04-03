@@ -56,5 +56,5 @@ let str = '문자열';
 ```
 >문자열은 문자열의 속성과 메소드를 활용하여 많은 것들을 할수있다.  
 >length, concat(), indexOf() 등등...  
->[MDN String.prototype](https://developer.mozilla.org/ko/docs/conflicting/Web/JavaScript/Reference/Global_Objects/String) 다양한 메소드와 활용법은 이 사이트를 참고하면 된다.
+>다양한 메소드와 활용법은 [MDN String.prototype](https://developer.mozilla.org/ko/docs/conflicting/Web/JavaScript/Reference/Global_Objects/String) 이 사이트를 참고하면 된다.
 
