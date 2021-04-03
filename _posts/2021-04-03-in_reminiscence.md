@@ -85,4 +85,4 @@ HTML과 css는 VScode를 설치하여 간단한 기초적인 부분을 습득했
 
 [Calculator](https://github.com/lhb7021/pre-sprint-calculator)구현은 그리 어렵지 않았다. 물론 처음이라 가이드라인이 있었기에 어렵게 느껴지진 않았던 것 같다.  
 모든게 처음이라 엄청 뒤죽박죽이기는 하지만 js와 css를 활용하여 프로그램을 구현한다는게 신기했고 재밌었다.
-![image](https://user-images.githubusercontent.com/79880529/113480351-dbfe9300-94ce-11eb-9710-b33c02518cdf.png){: width="30px", height="100px"}
+![image](https://user-images.githubusercontent.com/79880529/113480351-dbfe9300-94ce-11eb-9710-b33c02518cdf.png){: width="300px", height="450px"}
