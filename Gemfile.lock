@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    texture (0.5)
-      jekyll (>= 3.7)
-      jekyll-seo-tag (>= 2.1)
+    plainwhite (0.13)
+      jekyll (>= 3.7.3)
+      jekyll-seo-tag (>= 2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -72,8 +72,8 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (> 1.16)
+  plainwhite!
   rake (~> 12.0)
-  texture!
 
 BUNDLED WITH
    2.2.15
