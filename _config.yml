@@ -28,7 +28,7 @@ plainwhite:
   social_links:
     twitter: lhb7021
     github:  lhb7021
-    linkedIn: in/samarsault
+    #linkedIn: in/samarsault
     #rss: rss
     #dribbble: jekyll
     #flickr:   jekyll
@@ -39,7 +39,7 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    #email: jekyll
+    email: manevil6@gmail.com
 
     # Mastodon instances
     # mastodon:
