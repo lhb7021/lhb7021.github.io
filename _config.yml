@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Hanbin Lee
-  tagline: @lhb7021
+  tagline: lhb7021
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
