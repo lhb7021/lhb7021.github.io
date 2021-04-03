@@ -54,7 +54,7 @@ while('조건') {
 ``` js
 let str = '문자열';
 ```
->문자열은 문자열의 속성과 메소드를 활용하여 많은 것들을 할수있다.  
+>문자열은 문자열의 속성과 메소드를 활용하여 많은 것들을 할 수 있다.  
 >length, concat(), indexOf() 등등...  
 >다양한 메소드와 활용법은 [MDN String.prototype](https://developer.mozilla.org/ko/docs/conflicting/Web/JavaScript/Reference/Global_Objects/String) 이 사이트를 참고하면 된다.
 
@@ -81,8 +81,69 @@ HTML과 css는 VScode를 설치하여 간단한 기초적인 부분을 습득했
 
 
 ### 2주차
-2주차에는 1주차때 배웠던 HTML과 css를 활용하여 calculator를 구현해보는 시간을 가졌다. 그리고 js의 배열과 객채를 배웠고, 와이어프레임 설계 방법과 twittler를 하드코딩해보는 시간을 가졌다.
+2주차에는 1주차때 배웠던 HTML과 css를 활용하여 calculator를 구현해보는 시간을 가졌다. js의 배열, 객체, 변수의 데이터형, 스코프의 개념에 대해 배웠고, 와이어프레임 설계 방법과 twittler를 하드코딩해보는 시간을 가졌다.
 
 [Calculator](https://github.com/lhb7021/pre-sprint-calculator)구현은 그리 어렵지 않았다. 물론 처음이라 가이드라인이 있었기에 어렵게 느껴지진 않았던 것 같다.  
 모든게 처음이라 엄청 뒤죽박죽이기는 하지만 js와 css를 활용하여 프로그램을 구현한다는게 신기했고 재밌었다.
 ![image](https://user-images.githubusercontent.com/79880529/113480351-dbfe9300-94ce-11eb-9710-b33c02518cdf.png){: width="300px", height="450px"}
+
+베열은 문자열을 각각의 공간으로 배정된 저장소라고 생각하면된다.
+``` js
+let arr = ['one', 'two', 'three'];
+
+consol.log(arr); // ["one", "two", "three"]
+```
+>배열도 배열의 속성과 메소드를 활용하여 할 수 있다.  
+>[MDN Array](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)이 사이트를 참고하여 메소드들의 활용 방법을 알 수 있다.  
+
+객체는 배열과 다르게 {} curly brackets를 활용하여 속성과 값을 저장하는 역활을 한다.  
+``` js
+let obj = {
+  key: 'value'
+};
+consol.log(obj.key) // "value"
+```
+>객체 또한 객체의 속성과 여러 메소드를 활용하여 많은 작업을 할 수 있다.  
+>[MDN Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)  
+
+변수는 크게 원시 자료형(primitive data types)과 참조 자료형(reference data types)로 나뉜다.  
+>원시 자료형(primitive data types)는  
+>객체가 아니면서 method를 가지지 않는 6가지의 타입을 말한다.  
+>string, number, bigint, boolean, undefined, symbul, (null)이 있다.  
+>원시 자료형은 과거, 데이터 저장소의 용량이 제한되어 하나의 변수에는 제한된 공간이 할당되어 하나의 데이터만 들어갈 수 있었다.  
+>그래서 말 그대로 원시적인 데이터라고 하는 것이다.  죽, 하나의 변수에 하나의 데이터만 넣을수 있는 타입을 원시 자료형이라고 한다.
+>반면에 원시 자료형이 아닌 모든것을 참조 자료형이라 하는데,  
+>참조 자료형(reference data types)는  
+>배열(string)과 객체(object), 함수(function)가 대표적으로, 하나의 공간에 하나의 데이터가 들어가는 것을 공간적으로나 비용적으로 매우 비효율 적이다.  
+>그래서 각 데이터의 주소값을 활용하여 데이터를 효율적으로 활용한다.
+``` js
+let a = [1, 2, 3];
+let b = a;
+b[0] = 4;
+consol.log(a); // [4, 2, 3]
+```
+>변수 a에 데이터가 들어가는게 아니라 데이터의 주소값이 들어가기 때문에 변수 b에 변수 a의 값을 넣고, 변수 b를 수정하면 주소값이 변경되어서 변수 a의 값도 변한다.  
+
+스코프는 해당 변수가 활동 할 수 있는 범위를 말한다. 전역변수(Global Valiable)과 지역변수(Local Valiable)로 나뉜다.  
+>전역변수는 말그대로 스크립트 전체에서 쓰일 수 있는 변수라고 하고,  
+>지역변수는 선언된 함수 내에서만 쓰일 수 있는 변수라고 한다.  
+>여기에서 클로저 함수가 나오는데,  
+>함수안에 함수를 선언할때, 외부함수의 변수를 사용 할 수 있는 내부함수를 클로저 함수라고 한다.  
+``` js
+function outerFn() {  //외부함수.
+  let outerVar = 'outer';  //지역변수.
+  function innerFn() {  //내부함수, 클로저 함수.
+    let innerVar = 'inner';  //지역변수.
+  }
+}
+let globalVar = 'global';  //전역변수.
+```
+
+와이어프레임은 HTML를 구현하기전 기초 골격을 구상해 보는 작업이다. 코딩으로 치면 알고리즘을 짜는 것과 같다.  
+>와이어프레임은 종이에 직접 작성하며 구상해보는 것도 좋고 [Figma](https://www.figma.com/) 사이트를 이용해서 구상해도 좋다.  
+
+지금까지 배웠던 css와 js를 가지고 twittler를 구현해 보는 시간을 가졌다.  
+[twittler](https://github.com/lhb7021/pre-sprint-twittler)
+>하드코딩으로 끝나지 않고 버튼을 누르면 스크립트가 실행되게 구현해 보았다.  
+>나는 js는 정말 재밌게 배웠는데, css는 배우는데 힘들었다... 어렵거나 그런것은 아니지만... 창작의 고통같은...? 디자인을 너무 못한다..ㅠ  
+![image](https://user-images.githubusercontent.com/79880529/113483124-d14afa80-94dc-11eb-95d8-e11366aff3ff.png){ width="300", height="450" }
