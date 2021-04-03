@@ -58,3 +58,20 @@ let str = '문자열';
 >length, concat(), indexOf() 등등...  
 >다양한 메소드와 활용법은 [MDN String.prototype](https://developer.mozilla.org/ko/docs/conflicting/Web/JavaScript/Reference/Global_Objects/String) 이 사이트를 참고하면 된다.
 
+반복문은 for문이 있고, 반복문인 while문으로도 활용할 수 있다.
+``` js
+for('초기값'; '조건문'; '실행') {
+  consol.log('초기값이 조건문에 해당할 때까지 실행문에 따라 실행.');
+}
+for(let i in '변수') {
+  consol.log('i === 변수의 속성값(?)');
+}
+for(let i of '변수') {
+  consol.log('i === 변수');
+}
+```
+>for문은 초기값을 가진 새로운 변수가 필요하다. i가 '조건문' === true 일 때까지 '실행' 부분에 따라 반복된다.  
+>for...in 과 for...of는 나중에 알게된 부분이지만 여기에 같이 쓴다.  
+>for...in은 각 변수의 모든 속성값을 가지고 오기때문에 배열안의 객체인 변수일때 사용하면 용이하다.  
+>for...of는 for문의 줄임말과 같다.  
+
