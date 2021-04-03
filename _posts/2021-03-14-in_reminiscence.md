@@ -3,8 +3,7 @@ layout: post
 title:  "Full Pre 2주차 / Codestates 회고"
 categories: CodeStates
 ---
-
-Full Pre 2주차 / Codestates 회고
+## Full Pre 코스를 2주동안 하면서.. 
 ---
 
 하루하루 정신없이 보내다보니 벌써 2주라는 시간이 흘렀다. 안그래도 시간은 빨리갔는데... 어떻게 보면 총 20주중에 고작 2주밖에..? 라고 생각도 들지만.. 아무튼 빨리 갔다..ㅋ
