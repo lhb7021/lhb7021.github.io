@@ -50,3 +50,11 @@ while('조건') {
 >if문은 '조건' === true 라면 if문 안이 한번 실행된다.  
 >while문은 '조건' === true 일때까지 while문 안이 계속 실행된다.
 
+문자열은 말그대로 그냥 문자다...ㅋ..
+``` js
+let str = '문자열';
+```
+>문자열은 문자열의 속성과 메소드를 활용하여 많은 것들을 할수있다.  
+>length, concat(), indexOf() 등등...  
+>[MDN String.prototype](https://developer.mozilla.org/ko/docs/conflicting/Web/JavaScript/Reference/Global_Objects/String) 다양한 메소드와 활용법은 이 사이트를 참고하면 된다.
+
