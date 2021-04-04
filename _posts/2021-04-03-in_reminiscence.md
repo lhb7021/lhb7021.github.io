@@ -147,3 +147,123 @@ let globalVar = 'global';  //전역변수.
 >하드코딩으로 끝나지 않고 버튼을 누르면 스크립트가 실행되게 구현해 보았다.  
 >나는 js는 정말 재밌게 배웠는데, css는 배우는데 힘들었다... 어렵거나 그런것은 아니지만... 창작의 고통같은...? 디자인을 너무 못한다..ㅠ  
 ![image](https://user-images.githubusercontent.com/79880529/113483124-d14afa80-94dc-11eb-95d8-e11366aff3ff.png){: width="300", height="450" }
+
+---
+## 3주차
+3주차에는 고차함수와 DOM을 배웠다.
+
+고차함수란?  
+>함수를 인자로 받거나 함수를 리턴하는 함수를 뜻한다.  
+>이 때, 인자로 받는 함수를 콜백 함수라고 하고, 함수를 리턴하는 함수를 커리함수라고 한다.  
+``` js
+function double(num) {
+  return num * 2;
+}
+function doubleNum(func, num) {
+  return func(num);
+}
+```
+>고차함수에는 여러 내장메소드들이 있는데 그 중 filter, map, reduce에 대해 학습했다.
+
+>filter메소드는 특정 조건에 true인 값만 걸러주는 메소드이다.  
+``` js
+let num = [1, 2, 3, 4, 5];
+let result = num.filter(조건: 짝수);  //조건 === true
+
+consol.log(result);  //[2, 4]
+```
+>map메소드는 하나의 데이터를 다른 데이터로 맵핑 할 때 사용된다.
+``` js
+const cartoons = [
+  {
+    id: 1,
+    bookType: 'cartoon',
+    title: '식객',
+    subtitle: '어머니의 쌀',
+    createdAt: '2003-09-09',
+    genre: '요리',
+    artist: '허영만',
+    averageScore: 9.66,
+  },
+  {
+    id: 2,
+    // .. 이하 생략
+  },
+  // .. 이하 생략
+];
+const findSubtitle = function (cartoon) {
+  return cartoon.subtitle;
+};
+const subtitles = cartoons.map(findSubtitle);
+consol.log(subtitles);  //['어머니의 쌀', .. 이하 생략]
+```
+>reduce메소드는 여러 데이터를 하나의 데이터로 응축시킬 때 사용된다.
+``` js
+let nums = [1, 2, 3, 4, 5];
+
+let sum = nums.reduce(function (total, item) {
+  return total + item;
+});
+consol.log(sum);  //15
+```
+
+DOM이란?  
+>Document Object Model의 약자로, js를 사용하여 HTML를 조작 할 수 있게 해주는 것이라 보면된다.
+``` js
+document.createElement('태그');
+document.querySelector('id(#) or class(.)');
+```
+* createElement - CREATE
+* querySelector, querySelectorAll - READ
+* textContent, id, classList, setAttribute - UPDATE
+* remove, removeChild, innerHTML = '', textContent = '' - DELETE
+* appendChild - APPEND
+
+>유효성검사..너무 어렵다. 그중에 정규 표현식은 너무 모르겠다.. 나중에 다시 공부해야할 부분이다.  
+>[Validation Check](https://github.com/lhb7021/pre-sprint-validation-check)
+
+---
+## 4주차
+마지막 주차이다. 4주차에는 비동기 호출과 재귀 함수, API와 서버에 대해 배웠고, 지금까지 배운 것을 활용해서 Tree UI 와 날씨 앱을 만들어보는 시간을 가졌다.  
+
+비동기 호출이란 어떠한 이벤트가 작동했을때 실행되게끔 하는호출이다. 반대로 동기 호출은 반대의미라고 보면된다..  
+>같이 배웠던 부분으로 타이머 API가 있는데,  
+>setTimeout, clearTimeout, setInterval, clearInterval이다.
+``` js
+let timerTimeout setTimeout(function () {
+  console.log('1초뒤에 실행');
+}, 1000);
+
+clearTimeout(timerTimeout);  //실행 종료.
+
+let timerInterval = setInterval(function () {
+  console.log('1초간격으로 실행');
+}, 1000);
+
+clearInterval(timerInterval);  //반복실행 종료.
+```
+
+재귀함수는 자신을 호출 하는 함수라고 한다.  
+>예를 들어 factorial를 재귀함수로 구현한다면.
+```js
+function factorial(num) {
+  if(num === 0) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+}
+```
+
+open API를 사용하여 서버에 있는 정보를 가져와 활용할 수 있다.  
+>API key는 일종의 라이센스 key이기 때문에 발급받으면 보안에 조심해야한다. 비용적인 부분에서도 민감하기 때문에 조심해야한다!!
+>[날씨 open API](https://openweathermap.org/)를 사용해서 날씨 앱을 만들었다.  
+
+[Weather API](https://github.com/lhb7021/pre-sprint-weather-api)  
+
+
+[Tree UI]()
+
+---
+# 4주간의 회고를 마치며...
+4주라는 짧은 시간동안 참 많은 것을 배웠다. 중요한 부분은 배운부분을 잊어버리지 않고, 잘 활용 할 수 있어야 한다는 것이다. 복습하며 계속해서 공부하다 보면 언젠간 꿈꾸던 개발자가 되어 있지 않을까 싶다.  
+아직 3달정도의 시간이 남았는데 열심히 해서 꼭 완주에 성공할 것이다!!
