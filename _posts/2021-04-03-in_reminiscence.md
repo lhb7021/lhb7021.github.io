@@ -262,7 +262,7 @@ open API를 사용하여 서버에 있는 정보를 가져와 활용할 수 있�
 [Weather API](https://github.com/lhb7021/pre-sprint-weather-api)  
 ![image](https://user-images.githubusercontent.com/79880529/113500510-7b686800-9559-11eb-9c43-9959b06bf16e.png){: width="300", height="450" }
 
-[Tree UI](https://github.com/lhb7021/pre-sprint-tree-ui)
+[Tree UI](https://github.com/lhb7021/pre-sprint-tree-ui)  
 ![image](https://user-images.githubusercontent.com/79880529/113500551-d8fcb480-9559-11eb-8e05-3a025acbfebe.png){: width="300", height="600" }
 
 ---
