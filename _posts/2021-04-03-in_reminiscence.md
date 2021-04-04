@@ -171,9 +171,9 @@ let num = [1, 2, 3, 4, 5];
 let result = num.filter(조건: 짝수);  //조건 === true
 
 consol.log(result);  //[2, 4]
-```
+```  
 
->map메소드는 하나의 데이터를 다른 데이터로 맵핑 할 때 사용된다.
+>map메소드는 하나의 데이터를 다른 데이터로 맵핑 할 때 사용된다.  
 ``` js
 const cartoons = [
   {
