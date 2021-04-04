@@ -172,6 +172,7 @@ let result = num.filter(조건: 짝수);  //조건 === true
 
 consol.log(result);  //[2, 4]
 ```
+
 >map메소드는 하나의 데이터를 다른 데이터로 맵핑 할 때 사용된다.
 ``` js
 const cartoons = [
@@ -259,9 +260,10 @@ open API를 사용하여 서버에 있는 정보를 가져와 활용할 수 있�
 >[날씨 open API](https://openweathermap.org/)를 사용해서 날씨 앱을 만들었다.  
 
 [Weather API](https://github.com/lhb7021/pre-sprint-weather-api)  
+![image](https://user-images.githubusercontent.com/79880529/113500510-7b686800-9559-11eb-9c43-9959b06bf16e.png){: width="300", height="450" }
 
-
-[Tree UI]()
+[Tree UI](https://github.com/lhb7021/pre-sprint-tree-ui)
+![image](https://user-images.githubusercontent.com/79880529/113500551-d8fcb480-9559-11eb-8e05-3a025acbfebe.png){: width="300", height="600" }
 
 ---
 # 4주간의 회고를 마치며...
