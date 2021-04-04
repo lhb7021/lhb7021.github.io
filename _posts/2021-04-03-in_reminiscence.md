@@ -198,7 +198,8 @@ const findSubtitle = function (cartoon) {
 const subtitles = cartoons.map(findSubtitle);
 consol.log(subtitles);  //['어머니의 쌀', .. 이하 생략]
 ```
->reduce메소드는 여러 데이터를 하나의 데이터로 응축시킬 때 사용된다.
+
+>reduce메소드는 여러 데이터를 하나의 데이터로 응축시킬 때 사용된다.  
 ``` js
 let nums = [1, 2, 3, 4, 5];
 
@@ -209,11 +210,12 @@ consol.log(sum);  //15
 ```
 
 DOM이란?  
->Document Object Model의 약자로, js를 사용하여 HTML를 조작 할 수 있게 해주는 것이라 보면된다.
+>Document Object Model의 약자로, js를 사용하여 HTML를 조작 할 수 있게 해주는 것이라 보면된다.  
 ``` js
 document.createElement('태그');
 document.querySelector('id(#) or class(.)');
 ```
+
 * createElement - CREATE
 * querySelector, querySelectorAll - READ
 * textContent, id, classList, setAttribute - UPDATE
@@ -229,7 +231,7 @@ document.querySelector('id(#) or class(.)');
 
 비동기 호출이란 어떠한 이벤트가 작동했을때 실행되게끔 하는호출이다. 반대로 동기 호출은 반대의미라고 보면된다..  
 >같이 배웠던 부분으로 타이머 API가 있는데,  
->setTimeout, clearTimeout, setInterval, clearInterval이다.
+>setTimeout, clearTimeout, setInterval, clearInterval이다.  
 ``` js
 let timerTimeout setTimeout(function () {
   console.log('1초뒤에 실행');
@@ -245,8 +247,8 @@ clearInterval(timerInterval);  //반복실행 종료.
 ```
 
 재귀함수는 자신을 호출 하는 함수라고 한다.  
->예를 들어 factorial를 재귀함수로 구현한다면.
-```js
+>예를 들어 factorial를 재귀함수로 구현한다면.  
+``` js
 function factorial(num) {
   if(num === 0) {
     return 1;
